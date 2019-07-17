@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: KekCoin Core consensus library
+Description: Library for the KekCoin consensus protocol.
+Version: 3.0.0
+Libs: -L${libdir} -lkekcoinconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto
